@@ -1,0 +1,22 @@
+<div class = "container mt-5 bg-secondary  px-5 pb-5 pt-3 rounded">
+
+    <legend> <h1 class = "h2 text-center"> Atualização de Produtos  </h1> </legend>
+
+
+    <label for = "title_input" class = "font-weight-bold">Título</label> 
+    <input type = "text" [(ngModel)] = "product.title" placeholder = "Digite aqui o titulo" id = "title_input" class = "form-control"/> <br/>
+
+
+    <label for = "value_input" class = "font-weight-bold">Preço</label>
+    <input type = "number" [(ngModel)] = "product.price" placeholder = "Digite aqui o valor" id = "value_input" class = "form-control"/> <br/>
+
+
+    <label for = "description_textarea"  class = "font-weight-bold">Descrição</label> 
+    <textarea  [(ngModel)] = "product.description" placeholder = "Digite aqui a descrição" id = "description_textarea" class = "form-control" > </textarea> <br/>
+    
+    <div class = "text-center"> 
+        <button (click) = "updateProduct()" class = "btn btn-success mx-2"> Atualizar </button> 
+        <button  routerLink = "/list" class = "btn btn-danger mx-2"> Cancelar </button> 
+    </div>
+    
+</div>
