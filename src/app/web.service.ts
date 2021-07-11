@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class WebService {
 
-  baseUrl = "http://localhost:8080/api/produtos";
+  baseUrl = "https://sc3002519-angular-trabalho-backend.glitch.me/api/produtos";
 
   constructor(private http: HttpClient) { 
 
